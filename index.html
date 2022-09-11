@@ -98,7 +98,7 @@
         </div>
         <div id="main">
             <!-- Service card section -->
-            <div class="services">
+            <div id="services">
                 <h1>Our Services</h1>
                 <div class="grid">
                     <div class="card service1">
@@ -188,57 +188,65 @@
             </div>
             <!-- News cards section -->
             <div id="news">
-                <div>
-                    <h2 class="h2-news">Latest News</h2>
-                    <h3 class="h3-news"><a href="#">View All</a></h3>
+                <div class="news-header">
+                    <h2>Latest News</h2>
+                    <h3><a href="#">View All</a></h3>
                 </div>
-                <div class="card-news">
-                    <a href="#">
-                        <a href="#">NEWS</a>
-                        <img src="img/news/how-to-manage-4Z4i.webp" alt="How to manage your business on mobile">
-                        <h3>How to Manage Your Business on Mobile</h3>
-                        <p>Gone are the days when all business admin and management is 
-                            done on a computer, your mobile phone is...</p>
-                        <a class="btn-newsread" href="#">Read More</a>
-                        <div class="newscard-footer">
-                            <img id="netm-icon" src="img\news\netmatters-ltd-VXAv.webp" alt="Netmatters">
-                            <strong>Posted by Netmatters</strong>
-                            <br>
-                            "24th August 2022"
-                        </div>
-                    </a>
-                </div>
-                <div class="card-news">
-                    <a href="#">
-                        <a href="#">NEWS</a>
-                        <img src="img/news/adam-greer-achieves-Iq1u.webp" alt="Adam Greer">
-                        <h3>Adam Greer Achieves Long Service Award</h3>
-                        <p>We&rsquo;re celebrating Adam Greer this month for surpassing 
-                            &rsquo;Legend&rsquo; status, as he levels up to a Netmatt...</p>
-                        <a class="btn-newsread" href="#">Read More</a>
-                        <div class="newscard-footer">
-                            <img id="netm-icon" src="img\news\netmatters-ltd-VXAv.webp" alt="Netmatters">
-                            <strong>Posted by Netmatters</strong>
-                            <br>
-                            "24th August 2022"
-                        </div>
-                    </a>
-                </div>
-                <div class="card-news">
-                    <a href="#">
-                        <a href="#">NEWS</a>
-                        <img src="img/news/5-reasons-why-DFXS.webp" alt="Brainstorming with post it notes">
-                        <h3>5 Reasons Why You Need a Bespoke Website</h3>
-                        <p>What Is a Bespoke Website? A bespoke website is simply 
-                            one that is created entirely to maximise your...</p>
-                        <a class="btn-newsread" href="#">Read More</a>
-                        <div class="newscard-footer">
-                            <img id="netm-icon" src="img\news\netmatters-ltd-VXAv.webp" alt="Netmatters">
-                            <strong>Posted by Netmatters</strong>
-                            <br>
-                            "24th August 2022"
-                        </div>
-                    </a>
+                <div class="card-news-container">
+                    <div class="card-news">
+                        <a href="#">
+                            <a href="#">NEWS</a>
+                            <img class="card-img" src="img/news/how-to-manage-4Z4i.webp" alt="How to manage your business on mobile">
+                            <div class="card-body">
+                                <h3>How to Manage Your Business on Mobile</h3>
+                                <p>Gone are the days when all business admin and management is 
+                                    done on a computer, your mobile phone is...</p>
+                                <a class="btn newsread1" href="#">Read More</a>
+                                <div class="newscard-footer">
+                                    <img id="netm-icon" src="img\news\netmatters-ltd-VXAv.webp" alt="Netmatters">
+                                    <strong>Posted by Netmatters</strong>
+                                    <br>
+                                    "24th August 2022"
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-news">
+                        <a href="#">
+                            <a href="#">NEWS</a>
+                            <img class="card-img" src="img/news/adam-greer-achieves-Iq1u.webp" alt="Adam Greer">
+                            <div class="card-body">
+                                <h3>Adam Greer Achieves Long Service Award</h3>
+                                <p>We&rsquo;re celebrating Adam Greer this month for surpassing 
+                                    &rsquo;Legend&rsquo; status, as he levels up to a Netmatt...</p>
+                                <a class="btn newsread2" href="#">Read More</a>
+                                <div class="newscard-footer">
+                                    <img id="netm-icon" src="img\news\netmatters-ltd-VXAv.webp" alt="Netmatters">
+                                    <strong>Posted by Netmatters</strong>
+                                    <br>
+                                    "24th August 2022"
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-news">
+                        <a href="#">
+                            <a href="#">NEWS</a>
+                            <img class="card-img" src="img/news/5-reasons-why-DFXS.webp" alt="Brainstorming with post it notes">
+                            <div class="card-body">
+                                <h3>5 Reasons Why You Need a Bespoke Website</h3>
+                                <p>What Is a Bespoke Website? A bespoke website is simply 
+                                    one that is created entirely to maximise your...</p>
+                                <a class="btn newsread3" href="#">Read More</a>
+                                <div class="newscard-footer">
+                                    <img id="netm-icon" src="img\news\netmatters-ltd-VXAv.webp" alt="Netmatters">
+                                    <strong>Posted by Netmatters</strong>
+                                    <br>
+                                    "24th August 2022"
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- Associates section -->
@@ -271,19 +279,27 @@
             <!-- Newsletter section -->
             <div id="newsletter">
                 <form method="POST" id="signup">
-                    <label for="name" class="form-control-label">Your Name:</label>
-                    <input type="text" class="form-control" id="name">
+                    <h2>Email Newsletter Sign-Up</h2>
 
-                    <label for="email" class="form-control-label">Your Email:</label>
-                    <input type="email" class="form-control" id="email"><br>
+                    <div class="input-wrapper">
+                        <div class="input-item">
+                            <label for="name" class="form-control-label">Your Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="input-item">
+                            <label for="email" class="form-control-label">Your Email:</label>
+                            <input type="email" class="form-control" id="email"><br>
+                        </div>
+                    </div>
+                    <div class="check-wrapper">
+                        <input type="checkbox" id="marketing-info" value="marketing-info" 
+                        name="signup-form"><label for="marketing-info">Please tick this box 
+                            if you wish to receive marketing information from us. Please see 
+                            our <a href="#">Privacy Policy</a>  for more information on how we 
+                            keep your data safe.</label>
+                    </div>
 
-                    <input type="checkbox" id="marketing-info" value="marketing-info" 
-                    name="signup-form"><label for="marketing-info">Please tick this box 
-                        if you wish to receive marketing information from us. Please see 
-                        our <a href="#">Privacy Policy</a>  for more information on how we 
-                        keep your data safe.</label>
-
-                    <button type="btn-newsletter">Subscribe</button>
+                    <button class="btn newsletter" name="submit">Subscribe</button>
                 </form>
             </div>
         </div>

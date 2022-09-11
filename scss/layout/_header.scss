@@ -8,10 +8,6 @@ header {
         padding: 10px 0;
         position: relative;
         @include centre;
-        //margin: 20px;
-        // margin-left: auto;
-        // margin-right: auto;
-        //vertical-align: middle;
         @media (max-width: $lg) {
             width: 1200px;
         }
@@ -29,10 +25,24 @@ header {
             @media (max-width: $lg) {
                 width: 33%
             }
-            //vertical-align: middle;
+
             img {
                 max-width: 370px;
-                //display: table-cell;
+
+            }
+        }
+        .btn {
+            height: 56px;
+            line-height: 45px;
+        }
+        .search-form-container {
+            
+            .searchbar {
+                height: 56px;
+                padding: 5px 15px;
+            }
+            #search-submit {
+                height: 56px;
             }
         }
     }

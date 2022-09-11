@@ -403,33 +403,50 @@ header .inner .logo {
 header .inner .logo img {
   max-width: 370px;
 }
+header .inner .btn {
+  height: 56px;
+  line-height: 45px;
+}
+header .inner .search-form-container .searchbar {
+  height: 56px;
+  padding: 5px 15px;
+}
+header .inner .search-form-container #search-submit {
+  height: 56px;
+}
 
-.grid {
+#services {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-left: -40px;
+}
+#services .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 15px;
 }
-.grid .card {
+#services .grid .card {
   display: flex;
   flex-direction: column;
   height: 1fr;
+  padding: 30px;
   text-align: center;
   grid-column: span 4;
   border: 1px solid #ccc;
   border-radius: 15px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
-.grid .card .btn {
-  margin: auto auto 25px auto;
+#services .grid .card .btn {
+  margin: auto auto auto auto;
 }
-.grid .card:nth-child(n+4) {
+#services .grid .card:nth-child(n+4) {
   grid-column: span 3;
 }
-
-.service1 {
+#services .service1 {
   width: 400px;
 }
-
-.service2 {
+#services .service2 {
   width: 300px;
 }
 
@@ -486,7 +503,7 @@ header .inner .logo img {
 footer {
   background-color: #333645;
   color: white;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 45px;
 }
 footer .footer-container {
@@ -516,7 +533,7 @@ footer .footer-container .row .column ul li a {
   text-decoration: none;
 }
 footer .footer-container .bottom {
-  margin-top: 20px;
+  margin-top: 30px;
   border-top: 1px solid #888;
 }
 footer .footer-container .bottom .copyright {
@@ -539,6 +556,102 @@ footer .footer-container .bottom .copyright a {
   padding-bottom: 30px;
 }
 
+#newsletter {
+  background-color: #ddd;
+}
+#newsletter #signup {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  display: block;
+}
+#newsletter #signup h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+#newsletter #signup input, #newsletter #signup label {
+  font-weight: 600;
+}
+#newsletter #signup .input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#newsletter #signup .input-wrapper .input-item {
+  float: left;
+}
+#newsletter #signup .input-wrapper .input-item input, #newsletter #signup .input-wrapper .input-item label {
+  display: block;
+}
+#newsletter #signup .input-wrapper .input-item label {
+  padding-bottom: 10px;
+}
+#newsletter #signup .input-wrapper .input-item input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: 50px;
+  width: 580px;
+}
+#newsletter #signup .check-wrapper {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#newsletter #signup #marketing-info {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+#newsletter #signup .btn {
+  height: 45px;
+  box-shadow: none;
+  border: 0;
+}
+
+#news {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+#news .news-header {
+  display: flex;
+  justify-content: space-between;
+}
+#news .news-header h2, #news .news-header h3 {
+  font-weight: 600;
+}
+#news .news-header h2 {
+  font-size: 2.25rem;
+}
+#news .news-header h3 a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+#news .card-news-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+#news .card-news-container .card-news {
+  width: 33%;
+}
+#news .card-news-container .card-news .card-img {
+  width: 100%;
+}
+#news .card-news-container .card-news .card-body {
+  display: block;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 30px;
+}
+#news .card-news-container .card-news .card-body .btn {
+  height: 45px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
 a {
   color: #333645;
 }
@@ -547,11 +660,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  height: 56px;
+  height: auto;
   width: fit-content;
-  line-height: 20px;
+  line-height: 35px;
   border-radius: 3px;
-  padding: 20px 15px;
+  padding: 5px 15px;
   color: white;
 }
 
@@ -601,6 +714,18 @@ a {
 
 .trustpilot-btn {
   background-color: #00b67b;
+}
+
+.newsread1 {
+  background-color: #d64541;
+}
+
+.newsread2, .newsread3 {
+  background-color: #926fb1;
+}
+
+.newsletter {
+  background-color: #333645;
 }
 
 #nav-wrapper {
