@@ -1,0 +1,47 @@
+footer {
+    background-color: $dark;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    .footer-container {
+        @include centre;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            .column {
+                h4 {
+                    font-size: 1rem;
+                    font-weight: 200;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        line-height: 1.4rem;
+                        font-size: .8rem;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }   
+        }
+        .bottom {
+            margin-top: 20px;
+            border-top: 1px solid #888;
+            
+            .copyright {
+                font-weight: 200;
+                font-size: .8rem;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    }
+}

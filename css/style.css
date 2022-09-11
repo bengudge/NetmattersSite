@@ -308,7 +308,6 @@ template {
 }
 
 * {
-  color: #333645;
   box-sizing: border-box;
 }
 
@@ -318,6 +317,7 @@ div {
 
 body {
   font-family: Poppins, sans-serif;
+  color: #333645;
   font-size: 1rem;
   letter-spacing: 0.4px;
 }
@@ -326,7 +326,17 @@ img {
   vertical-align: middle;
 }
 
+h2 {
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
 #banner {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   min-height: 550px;
@@ -335,8 +345,7 @@ img {
   margin-bottom: 20px;
   text-align: left;
   line-height: normal;
-  background: url(../img/home-oaVs.jpg) center/cover no-repeat #454959;
-  box-shadow: inset 70px 0 200px -7px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../img/home-oaVs.jpg) center/cover no-repeat;
 }
 #banner h1, #banner p {
   color: white;
@@ -351,13 +360,9 @@ img {
 }
 
 .services {
-  padding: 2px 16px;
-}
-
-.grid {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: table;
+  padding: 10px 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header .inner {
@@ -399,13 +404,139 @@ header .inner .logo img {
   max-width: 370px;
 }
 
-.service1 {
-  display: block;
-  margin-top: 30px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+.grid .card {
+  display: flex;
+  flex-direction: column;
+  height: 1fr;
   text-align: center;
+  grid-column: span 4;
   border: 1px solid #ccc;
   border-radius: 15px;
-  float: left;
+}
+.grid .card .btn {
+  margin: auto auto 25px auto;
+}
+.grid .card:nth-child(n+4) {
+  grid-column: span 3;
+}
+
+.service1 {
+  width: 400px;
+}
+
+.service2 {
+  width: 300px;
+}
+
+#welcome {
+  background-color: #333645;
+}
+#welcome .grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  color: white;
+}
+#welcome .grid .column {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+#welcome .grid .column h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+#welcome .grid .column p {
+  margin-bottom: 25px;
+  line-height: 2rem;
+}
+#welcome .grid .column a {
+  text-decoration: none;
+  color: white;
+}
+#welcome .grid .column div {
+  margin-top: auto;
+}
+#welcome .grid .column div .btn {
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+#welcome .grid .column .quote {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#welcome .grid .column .quote-author {
+  color: #a3a8ac;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #333645;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+footer .footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+footer .footer-container .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-container .row .column h4 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+footer .footer-container .row .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-container .row .column ul li {
+  line-height: 1.4rem;
+  font-size: 0.8rem;
+}
+footer .footer-container .row .column ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-container .bottom {
+  margin-top: 20px;
+  border-top: 1px solid #888;
+}
+footer .footer-container .bottom .copyright {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+footer .footer-container .bottom .copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+#associates {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 a {
@@ -417,7 +548,8 @@ a {
   text-transform: uppercase;
   text-align: center;
   height: 56px;
-  line-height: normal;
+  width: fit-content;
+  line-height: 20px;
   border-radius: 3px;
   padding: 20px 15px;
   color: white;
@@ -459,6 +591,18 @@ a {
   background-color: #ce4125;
 }
 
+.welcome-read {
+  background-color: #272936;
+}
+
+.google-btn {
+  background-color: #4387f6;
+}
+
+.trustpilot-btn {
+  background-color: #00b67b;
+}
+
 #nav-wrapper {
   width: 100%;
   min-height: 100px;
@@ -480,6 +624,7 @@ a {
   justify-content: space-around;
 }
 #nav-wrapper nav ul li {
+  justify-content: center;
   position: relative;
   text-align: center;
   text-transform: uppercase;

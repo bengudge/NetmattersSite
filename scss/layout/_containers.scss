@@ -1,7 +1,9 @@
 
 //Banner
 #banner {
-    //@include centre;
+    
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     min-height: 550px;
@@ -10,31 +12,24 @@
     margin-bottom: 20px;
     text-align: left;
     line-height: normal;
-    background: url(../img/home-oaVs.jpg) center / cover no-repeat #454959;
-    //box-shadow: inset 0 0 60px 40px rgba(0,10,30,.8);
-    box-shadow: inset 70px 0 200px -7px rgba(0,0,0,0.7);
+    background: linear-gradient(to right,  black, rgba(0, 0, 0, 0)),  url(../img/home-oaVs.jpg) center / cover no-repeat;
+
     h1, p {
         color: white; 
     }
     h1 {
-        //position: relative;
         font-size: 4rem;
         line-height: 5rem;
     } 
     p {
-        //position: relative;
         font-size: 1.65rem;
         line-height: 2.5rem;
     }
 }
 
 .services {
-    padding: 2px 16px;
+    padding: 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.grid {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: table;
-    //grid-template-columns: auto auto auto;
-}

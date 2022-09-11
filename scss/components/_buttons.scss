@@ -8,7 +8,8 @@ a {
     text-transform: uppercase;
     text-align: center;
     height: 56px;
-    line-height: normal;
+    width: fit-content;
+    line-height: 20px;
     border-radius: 3px;
     padding: 20px 15px;
     color: white;
@@ -49,4 +50,16 @@ a {
 
 .dt {
     background-color: #ce4125;
+}
+
+.welcome-read {
+    background-color: #272936;
+}
+
+.google-btn {
+    background-color: #4387f6;
+}
+
+.trustpilot-btn {
+    background-color: #00b67b;
 }
