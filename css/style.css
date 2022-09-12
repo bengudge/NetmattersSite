@@ -359,12 +359,6 @@ p {
   line-height: 2.5rem;
 }
 
-.services {
-  padding: 10px 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 header .inner {
   display: flex;
   flex-wrap: wrap;
@@ -405,7 +399,8 @@ header .inner .logo img {
 }
 header .inner .btn {
   height: 56px;
-  line-height: 45px;
+  line-height: 47px;
+  font-size: 1.1rem;
 }
 header .inner .search-form-container .searchbar {
   height: 56px;
@@ -460,7 +455,7 @@ header .inner .search-form-container #search-submit {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding-top: 35px;
+  padding-top: 20px;
   padding-bottom: 50px;
   color: white;
 }
@@ -488,7 +483,21 @@ header .inner .search-form-container #search-submit {
   margin-right: 10px;
   border-radius: 6px;
   font-size: 20px;
-  padding: 10px 30px;
+  padding: 15px 30px;
+}
+#welcome .grid .column .buttons-wrapper {
+  width: 150%;
+  margin-bottom: 30px;
+}
+#welcome .grid .column .icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#welcome .grid .column .icons .fa-star {
+  color: orange;
+  font-size: 50px;
 }
 #welcome .grid .column .quote {
   font-size: 1.3rem;
@@ -646,10 +655,20 @@ footer .footer-container .bottom .copyright a {
   border-top: 0;
   padding: 30px;
 }
+#news .card-news-container .card-news .card-body h3 {
+  color: #926fb1;
+  padding-top: -20px;
+}
 #news .card-news-container .card-news .card-body .btn {
   height: 45px;
   padding: 10px 15px;
   margin-bottom: 20px;
+}
+#news .card-news-container .card-news .card-body .newscard-footer {
+  padding-top: 20px;
+  margin-top: 25px;
+  line-height: 2rem;
+  border-top: 1px solid #ccc;
 }
 
 a {
@@ -726,6 +745,10 @@ a {
 
 .newsletter {
   background-color: #333645;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
 }
 
 #nav-wrapper {

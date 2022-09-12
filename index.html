@@ -12,6 +12,7 @@
         <link rel="preload" href="/assets/fonts/poppins-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/259440ef33.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -20,8 +21,14 @@
                 <a class="logo" href="#">
                     <img src="img/logo.webp" alt="Netmatters logo">
                 </a>
-                <a class="btn support" href="#" target="_blank">Support</a>
-                <a class="btn contact" href="#" target="_blank">Contact</a>
+                <a class="btn support" href="#" target="_blank">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    Support
+                </a>
+                <a class="btn contact" href="#" target="_blank">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Contact
+                </a>
                 <!-- Search form -->
                 <div class="search-form-container">
                     <form method="GET" action="#" accept-charset="UTF-8" class="search-form">
@@ -34,7 +41,6 @@
             </div>
         </header>
         <!-- Navigation section with dropdown menus -->
-        <!-- Flex this -->
         <div id="nav-wrapper">
             <nav>
                 <ul>
@@ -76,6 +82,7 @@
                     <li id="nav-security">
                         <a href="#">
                             <!-- Icon here -->
+                            <i class="fa-solid fa-shield-quartered"></i>
                             <small>Cyber</small>
                             Security
                         </a>
@@ -170,18 +177,34 @@
                             unique business offering and cost model that ensures you get 
                             the most from our relationship in an upfront manner.
                         </p>
-                        <div><a href="#" class="btn welcome-read">Read More</a></div>
+                        <div><a href="#" class="btn welcome-read">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a></div>
                     </div>
                     <div class="column">
                         <h2><strong>What Our Clients Think</strong></h2>
                         <!-- 5 star icon -->
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
                         <p class="quote"><strong><em>Great service. Took the reigns and did all the leg work for us. 
                             Ensured we were happy with our website and made all changes 
                             necessary as and when asked to do so.</em></strong></p>
                         <p class="quote-author">Oliver King - SEA Scaffolding</p>
-                        <div>
-                            <a href="#" class="btn google-btn">Google Reviews</a>
-                            <a href="#" class="btn trustpilot-btn">Trustpilot Reviews</a>
+                        <div class="buttons-wrapper">
+                            <a href="#" class="btn google-btn">
+                                Google Reviews
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="btn trustpilot-btn">
+                                Trustpilot Reviews
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +213,7 @@
             <div id="news">
                 <div class="news-header">
                     <h2>Latest News</h2>
-                    <h3><a href="#">View All</a></h3>
+                    <h3><a href="#">View All<i class="fa-solid fa-arrow-right"></i></a></h3>
                 </div>
                 <div class="card-news-container">
                     <div class="card-news">
