@@ -1,9 +1,14 @@
 
 //Centre containers
 @mixin centre {
-    width: 90%;
+    //width: 90%;
     max-width: $max-width;
     margin: 20px auto;
     //margin-left: auto;
     //margin-right: auto;
+}
+
+//Image Colours
+@mixin greyImg {
+    filter: invert(51%) sepia(12%) saturate(946%) hue-rotate(173deg) brightness(94%) contrast(91%);
 }

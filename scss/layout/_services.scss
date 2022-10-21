@@ -2,35 +2,141 @@
 
 #services {
     @include centre;
-    padding-left: -40px;
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 15px;
-        .card {
-            display: flex;
-            flex-direction: column;
-            height: 1fr;
-            padding: 30px;
-            text-align: center;
-            grid-column: span 4;
-            border: 1px solid #ccc;
-            border-radius: 15px;
-            box-shadow: 0 3px 35px rgba(0,0,0,.1);
-            .btn {
-                margin: auto auto auto auto;
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    #service-heading {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 47px;
+        padding-right: 47px;
+        .view-all {
+            line-height: 130px;
+        }
+    }
+    .container {
+        
+        .row {
+            .col-md-4, .col-lg-3, .col-md-6, .col-sm-6 {
+                .card-link {
+                    display: block;
+                    padding: 30px;
+                    margin-bottom: 25px;
+                    //margin-left: 10px;
+                    //margin-right: 10px;
+                    text-align: center;
+                    border-radius: 15px;
+                    border: 1px solid #ccc;
+                    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                    font-weight: 400;
+                    .icon-circle {
+                        border-radius: 50%;
+                        height: 65px;
+                        width: 65px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 10px;
+                        i {
+                            color: white;
+                            padding-left: 1px;
+                            //padding-right: auto;
+                            padding-top: 19px;
+                            font-size: 1.7rem;
+                        }
+                    }
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+                    p {
+                        font-size: .85rem;
+                    }
+                    .btn {
+                        margin-top: auto;
+                        margin-bottom: 5px;
+                    }
+                }
+                .card-link:hover {
+                    color: white;
+                }
+                .bs-hover:hover {
+                    background-color: $grey;
+                    .bs {
+                        background-color: white;
+                        color: $grey;
+                        .bs-icon {
+                            @include greyImg;
+                        }
+                    }
+                }
+                .is-hover:hover {
+                    background-color: $blue;
+                    .is {
+                        background-color: white;
+                        color: $blue;
+                        i {
+                            color: $blue;
+                        }
+                    }
+                }
+                .dm-hover:hover {
+                    background-color: $green;
+                    .dm {
+                        background-color: white;
+                        color: $green;
+                        i {
+                            color: $green;
+                        }
+                    }
+                }
+                .ts-hover:hover {
+                    background-color: $red;
+                    .ts {
+                        background-color: white;
+                        color: $red;
+                        i {
+                            color: $red;
+                        }
+                    }
+                }
+                .wd-hover:hover {
+                    background-color: $purple;
+                    .wd {
+                        background-color: white;
+                        color: $purple;
+                        i {
+                            color: $purple;
+                        }
+                    }
+                }
+                .cs-hover:hover {
+                    background-color: $bubblegum;
+                    .cs {
+                        background-color: white;
+                        color: $bubblegum;
+                        i {
+                            color: $bubblegum;
+                        }
+                    }
+                }
+                .dt-hover:hover {
+                    background-color: $tomato;
+                    .dt {
+                        background-color: white;
+                        color: $tomato;
+                        i {
+                            color: $tomato;
+                        }
+                    }
+                }
+                
+            }
+            @media (min-width: $md) {
+                .col-md-4 {
+                    width: 33.3%;
+                }
+                
             }
         }
-        .card:nth-child(n + 4) {
-            grid-column: span 3;
-        }
-    }
-
-    .service1 {
-        width: 400px;
-    }
-
-    .service2 {
-        width: 300px;
     }
 }

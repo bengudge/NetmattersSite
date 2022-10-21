@@ -5,5 +5,9 @@
     justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
-    
+    filter: grayscale(100%);
+
+    @media (max-width: $md) {
+        display: none;
+    }
 }

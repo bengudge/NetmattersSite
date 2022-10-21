@@ -5,11 +5,15 @@ footer {
     padding-bottom: 45px;
     .footer-container {
         @include centre;
-
-        .row {
+        padding-left: 47px;
+        padding-right: 47px;
+        .footer-row {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            
             .column {
+                padding-top: 20px;
                 h4 {
                     font-size: 1rem;
                     font-weight: 200;
@@ -28,6 +32,9 @@ footer {
                     }
                 }
             }   
+            @media (max-width: $lg) {
+                //flex-direction: column;
+            }
         }
         .bottom {
             margin-top: 30px;

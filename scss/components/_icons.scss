@@ -2,3 +2,31 @@
 .fa-arrow-right {
     margin-left: 5px;
 }
+
+.bs-icon {
+    @include greyImg;
+}
+
+.is-icon {
+    color: $blue;
+}
+
+.dm-icon {
+    color: $green;
+}
+
+.ts-icon {
+    color: $red;
+}
+
+.wd-icon {
+    color: $purple;
+}
+
+.cs-icon {
+    color: $bubblegum;
+}
+
+.dc-icon {
+    color: $tomato;
+}

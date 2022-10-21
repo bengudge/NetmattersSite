@@ -4,26 +4,26 @@ header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: left;
         padding: 10px 0;
         position: relative;
         @include centre;
-        @media (max-width: $lg) {
-            width: 1200px;
-        }
-        @media (max-width: $md) {
-            width: 970px;
-        }
+
         @media (max-width: $sm) {
-            width: 750px;
+            //width: 750px;
         }
         .logo {
             padding: 10px;
             padding-right: 50px;
-            
+            margin-right: 40px;
 
             @media (max-width: $lg) {
-                width: 33%
+                width: 33%;
+                margin-right: 60px;
+            }
+
+            @media (max-width: $md) {
+                margin-right: 150px;
             }
 
             img {
@@ -32,18 +32,55 @@ header {
             }
         }
         .btn {
-            height: 56px;
             line-height: 47px;
             font-size: 1.1rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 20px;
+        }
+        .contact, .support {
+            @media (max-width: $md) { 
+                display: none;
+            }
         }
         .search-form-container {
-            
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 25px;
             .searchbar {
-                height: 56px;
-                padding: 5px 15px;
+                padding: 16.805px 15px;
+                @media (max-width: $lg) {
+                    display: none;
+                }
+                @media (max-width: $md) { 
+                    display: inline;
+                }
+                @media (max-width: $sm) { 
+                    padding-right: auto;
+                }
             }
             #search-submit {
-                height: 56px;
+                background-color: #999aa2;
+                margin-left: -6px;
+                padding: 12px 19.5px 19px 19.5px;
+                border: none;
+                border-radius: 0 3px 3px 0;
+                i {
+                    font-size: 1.5rem;
+                    color: white;
+                    
+                }
+            }
+        }
+        .burger-menu {
+            background-color: #333645;
+            border: none;
+            border-radius: 3px;
+            padding-left: 17.5px;
+            padding-right: 17.5px;
+            i {
+                color: white;
+                font-size: 2rem;
             }
         }
     }

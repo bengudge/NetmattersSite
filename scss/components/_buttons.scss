@@ -25,7 +25,7 @@ a {
 }
 
 .bs {
-    background-color: #67809f;
+    background-color: $grey;
 }
 
 .is {
@@ -33,7 +33,7 @@ a {
 }
 
 .dm {
-    background-color: #2ecc71;
+    background-color: $green;
 }
 
 .ts {
@@ -45,11 +45,11 @@ a {
 }
 
 .cs {
-    background-color: #f62459;
+    background-color: $bubblegum;
 }
 
 .dt {
-    background-color: #ce4125;
+    background-color: $tomato;
 }
 
 .welcome-read {
