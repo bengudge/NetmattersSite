@@ -1,0 +1,50 @@
+.form-container {
+    @include centre;
+    max-width: 770px;
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #ddd;
+        border-radius: 10px;
+        padding: 30px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        font-size: 0.95rem;
+        min-height: 100px;
+
+        textarea {
+            min-height: 100px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: auto;
+            gap: 15px;
+
+            .label-input {
+                width: 48%;
+            }
+        }
+
+        .form-input {
+            height: 47px;
+            padding: 5px 15px;
+            display: block;
+            width: 100%;
+
+        }
+
+        .btn {
+            background-color: $purple;
+        }
+    }
+}
+
+.mandatory::after {
+    color: rgb(202, 0, 0);
+    content: " *";
+}

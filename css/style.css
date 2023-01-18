@@ -1,3 +1,227 @@
+a {
+  color: #333645;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  height: auto;
+  width: fit-content;
+  line-height: 35px;
+  border-radius: 3px;
+  padding: 5px 15px;
+  color: white;
+}
+
+.support {
+  background-color: #4183d7;
+}
+
+.contact {
+  background-color: #999aa2;
+}
+
+.bs {
+  background-color: #67809f;
+}
+
+.is {
+  background-color: #4183d7;
+}
+
+.dm {
+  background-color: #2ecc71;
+}
+
+.ts {
+  background-color: #d64541;
+}
+
+.wd {
+  background-color: #926fb1;
+}
+
+.cs {
+  background-color: #f62459;
+}
+
+.dt {
+  background-color: #ce4125;
+}
+
+.welcome-read {
+  background-color: #272936;
+}
+
+.google-btn {
+  background-color: #4387f6;
+}
+
+.trustpilot-btn {
+  background-color: #00b67b;
+}
+
+.newsletter {
+  background-color: #333645;
+}
+
+.fa-arrow-right {
+  margin-left: 5px;
+}
+
+.bs-icon {
+  filter: invert(51%) sepia(12%) saturate(946%) hue-rotate(173deg) brightness(94%) contrast(91%);
+}
+
+.is-icon {
+  color: #4183d7;
+}
+
+.dm-icon {
+  color: #2ecc71;
+}
+
+.ts-icon {
+  color: #d64541;
+}
+
+.wd-icon {
+  color: #926fb1;
+}
+
+.cs-icon {
+  color: #f62459;
+}
+
+.dc-icon {
+  color: #ce4125;
+}
+
+.bs-icon {
+  font-size: 0.5rem;
+  height: 47px;
+  width: 47px;
+  margin-top: 8.4px;
+  filter: invert(100%);
+}
+
+#nav-wrapper {
+  width: 100%;
+  min-height: 100px;
+  background-color: #333645;
+}
+#nav-wrapper nav {
+  max-width: 1200px;
+  margin: 20px auto;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#nav-wrapper nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#nav-wrapper nav ul li {
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#nav-wrapper nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+#nav-wrapper nav ul li a .bs-icon {
+  filter: invert(51%) sepia(12%) saturate(946%) hue-rotate(173deg) brightness(94%) contrast(91%);
+  height: 23.5px;
+  width: 23.5px;
+  margin-top: 17px;
+  margin-bottom: 5px;
+}
+#nav-wrapper nav ul li a i {
+  margin-top: 21px;
+  margin-bottom: 8px;
+}
+#nav-wrapper nav ul li a small {
+  display: block;
+  color: white;
+  font-size: xx-small;
+}
+@media (max-width: 992px) {
+  #nav-wrapper {
+    display: none;
+  }
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  /* The sidebar links */
+  /* When you mouse over the navigation links, change their color */
+  /* Position and style the close button (top right corner) */
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the left when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -406,7 +630,8 @@ header .inner .search-form-container {
   margin-left: 25px;
 }
 header .inner .search-form-container .searchbar {
-  padding: 16.805px 15px;
+  padding: 22px 15px 15px 15px;
+  margin-top: 1.4px;
 }
 @media (max-width: 1260px) {
   header .inner .search-form-container .searchbar {
@@ -426,13 +651,14 @@ header .inner .search-form-container .searchbar {
 header .inner .search-form-container #search-submit {
   background-color: #999aa2;
   margin-left: -6px;
-  padding: 12px 19.5px 19px 19.5px;
+  padding: 15px 19.5px 17px 19.5px;
   border: none;
   border-radius: 0 3px 3px 0;
 }
 header .inner .search-form-container #search-submit i {
   font-size: 1.5rem;
   color: white;
+  padding-top: 2px;
 }
 header .inner .burger-menu {
   background-color: #333645;
@@ -440,20 +666,12 @@ header .inner .burger-menu {
   border-radius: 3px;
   padding-left: 17.5px;
   padding-right: 17.5px;
+  padding-bottom: 0px;
 }
 header .inner .burger-menu i {
   color: white;
   font-size: 2rem;
-}
-
-#sticky-id {
-  padding: 0;
-}
-
-#sidebarCollapse {
-  padding-top: 11px;
-  padding-bottom: 46px;
-  height: 32px;
+  padding-top: 3px;
 }
 
 #services {
@@ -749,12 +967,10 @@ footer .footer-container .bottom .copyright a {
 }
 #newsletter #signup .input-wrapper .input-item {
   float: left;
+  padding-top: 10px;
 }
 #newsletter #signup .input-wrapper .input-item input, #newsletter #signup .input-wrapper .input-item label {
   display: block;
-}
-#newsletter #signup .input-wrapper .input-item label {
-  padding-bottom: 10px;
 }
 #newsletter #signup .input-wrapper .input-item input {
   border: 1px solid #ccc;
@@ -766,14 +982,25 @@ footer .footer-container .bottom .copyright a {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-#newsletter #signup #marketing-info {
-  margin-right: 10px;
-  border-radius: 50%;
-}
 #newsletter #signup .btn {
   height: 45px;
   box-shadow: none;
   border: 0;
+}
+
+.check-wrapper {
+  display: flex;
+}
+.check-wrapper #marketing-info {
+  margin-right: 20px;
+  border-radius: 3px;
+  border-width: 10px;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+}
+.check-wrapper #marketing-info:checked {
+  background-color: #333645;
 }
 
 #news {
@@ -812,11 +1039,20 @@ footer .footer-container .bottom .copyright a {
   padding-left: 10px;
   padding-right: 10px;
 }
-#news .container .row .card-news .nl1 {
+#news .container .row .card-news .red-card {
   background-color: #d64541;
 }
-#news .container .row .card-news .nl2, #news .container .row .card-news .nl3 {
+#news .container .row .card-news .purple-card {
   background-color: #926fb1;
+}
+#news .container .row .card-news .grey-card {
+  background-color: #67809f;
+}
+#news .container .row .card-news .green-card {
+  background-color: #2ecc71;
+}
+#news .container .row .card-news .blue-card {
+  background-color: #4183d7;
 }
 #news .container .row .card-news .card-img {
   width: 100%;
@@ -887,256 +1123,49 @@ footer .footer-container .bottom .copyright a {
     width: 50%;
   }
 }
-a {
-  color: #333645;
-}
-
-.btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  height: auto;
-  width: fit-content;
-  line-height: 35px;
-  border-radius: 3px;
-  padding: 5px 15px;
-  color: white;
-}
-
-.support {
-  background-color: #4183d7;
-}
-
-.contact {
-  background-color: #999aa2;
-}
-
-.bs {
-  background-color: #67809f;
-}
-
-.is {
-  background-color: #4183d7;
-}
-
-.dm {
-  background-color: #2ecc71;
-}
-
-.ts {
-  background-color: #d64541;
-}
-
-.wd {
-  background-color: #926fb1;
-}
-
-.cs {
-  background-color: #f62459;
-}
-
-.dt {
-  background-color: #ce4125;
-}
-
-.welcome-read {
-  background-color: #272936;
-}
-
-.google-btn {
-  background-color: #4387f6;
-}
-
-.trustpilot-btn {
-  background-color: #00b67b;
-}
-
-.newsread1 {
-  background-color: #d64541;
-}
-
-.newsread2, .newsread3 {
-  background-color: #926fb1;
-}
-
-.newsletter {
-  background-color: #333645;
-}
-
-.fa-arrow-right {
-  margin-left: 5px;
-}
-
-.bs-icon {
-  filter: invert(51%) sepia(12%) saturate(946%) hue-rotate(173deg) brightness(94%) contrast(91%);
-}
-
-.is-icon {
-  color: #4183d7;
-}
-
-.dm-icon {
-  color: #2ecc71;
-}
-
-.ts-icon {
-  color: #d64541;
-}
-
-.wd-icon {
-  color: #926fb1;
-}
-
-.cs-icon {
-  color: #f62459;
-}
-
-.dc-icon {
-  color: #ce4125;
-}
-
-.bs-icon {
-  font-size: 0.5rem;
-  height: 47px;
-  width: 47px;
-  margin-top: 8.4px;
-  filter: invert(100%);
-}
-
-#nav-wrapper {
-  width: 100%;
-  min-height: 100px;
-  background-color: #333645;
-}
-#nav-wrapper nav {
+.form-container {
   max-width: 1200px;
   margin: 20px auto;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+  max-width: 770px;
 }
-#nav-wrapper nav ul {
-  padding: 0;
-  margin: 0;
+.form-container #contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 0.95rem;
+  min-height: 100px;
+}
+.form-container #contact-form textarea {
+  min-height: 100px;
+}
+.form-container #contact-form .input-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: auto;
+  gap: 15px;
 }
-#nav-wrapper nav ul li {
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
+.form-container #contact-form .input-group .label-input {
+  width: 48%;
+}
+.form-container #contact-form .form-input {
+  height: 47px;
+  padding: 5px 15px;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 100%;
 }
-#nav-wrapper nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-#nav-wrapper nav ul li a .bs-icon {
-  filter: invert(51%) sepia(12%) saturate(946%) hue-rotate(173deg) brightness(94%) contrast(91%);
-  height: 23.5px;
-  width: 23.5px;
-  margin-top: 17px;
-  margin-bottom: 5px;
-}
-#nav-wrapper nav ul li a i {
-  margin-top: 21px;
-  margin-bottom: 8px;
-}
-#nav-wrapper nav ul li a small {
-  display: block;
-  color: white;
-  font-size: xx-small;
-}
-@media (max-width: 992px) {
-  #nav-wrapper {
-    display: none;
-  }
+.form-container #contact-form .btn {
+  background-color: #926fb1;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column-reverse;
-  text-decoration: none;
-  transition: all 0.4s;
-}
-
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background: #262933;
-  color: #fff;
-  transition: all 0.4s;
-  height: 100vh;
-}
-
-#sidebar.active {
-  margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: #1b1d24;
-}
-
-#sidebar ul.components {
-  padding: 20px 0;
-  /* border-bottom: 1px solid #47748b; */
-}
-
-#sidebar ul p {
-  color: #fff;
-  padding: 10px;
-}
-
-#sidebar ul li a {
-  padding: 10px;
-  font-size: 1.1em;
-  display: block;
-}
-
-#sidebar ul li a:hover {
-  color: #262933;
-  background: #fff;
-}
-
-#sidebar ul li.active > a,
-a[aria-expanded=true] {
-  color: #fff;
-  background: #1b1d24;
-}
-
-a[data-toggle=collapse] {
-  position: relative;
-}
-
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20%;
-  transform: translateY(-50%);
-}
-
-ul ul a {
-  font-size: 0.9em !important;
-  padding-left: 30px !important;
-  background: #1b1d24;
-}
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px;
-  }
-  #sidebar.active {
-    margin-left: 0;
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
+.mandatory::after {
+  color: rgb(202, 0, 0);
+  content: " *";
 }
 
 /*# sourceMappingURL=style.css.map */

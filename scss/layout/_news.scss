@@ -36,12 +36,24 @@
                     padding-left: 10px;
                     padding-right: 10px;
                 }
-                .nl1 {
+                
+                // Card colours:
+                .red-card {
                     background-color: $red;
                 }
-                .nl2, .nl3 {
+                .purple-card {
                     background-color: $purple;
                 }
+                .grey-card {
+                    background-color: $grey;
+                }
+                .green-card {
+                    background-color: $green;
+                }
+                .blue-card {
+                    background-color: $blue;
+                }
+
                 .card-img {
                     width: 100%;
                     box-shadow: 0 3px 35px rgba(0,0,0,.1);

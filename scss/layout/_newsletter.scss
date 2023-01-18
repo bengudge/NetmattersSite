@@ -24,11 +24,9 @@
 
             .input-item {
                 float: left;
+                padding-top: 10px;
                 input, label {
                     display: block;
-                }
-                label {
-                    padding-bottom: 10px;
                 }
                 input {
                     border: 1px solid #ccc;
@@ -42,11 +40,7 @@
             margin-top: 10px;
             margin-bottom: 30px;
         }
-        #marketing-info {
-            margin-right: 10px;
-            border-radius: 50%;
-
-        }
+        
         .btn {
             height: 45px;
             box-shadow: none;
@@ -54,4 +48,25 @@
 
         }
     }
+}
+
+.check-wrapper {
+    display: flex;
+
+    #marketing-info {
+        margin-right: 20px;
+        border-radius: 3px;
+        border-width: 10px;
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        
+
+
+    }
+
+    #marketing-info:checked {
+        background-color: $dark;
+    }
+    
 }

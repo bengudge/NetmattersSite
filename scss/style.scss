@@ -1,7 +1,13 @@
-//Component Styles
+//Utility Styles
 @import 'utilities/variables',
         'utilities/mixins';
 
+//Component Styles
+@import 'components/buttons',
+        'components/icons',
+        'components/images',
+        'components/nav',
+        'components/sidebar';
 
 //Base Styles
 @import 'base/reset',
@@ -15,10 +21,5 @@
         'layout/footer',
         'layout/associates',
         'layout/newsletter',
-        'layout/news';
-
-//Component Styles
-@import 'components/buttons',
-        'components/icons',
-        'components/images',
-        'components/nav';
+        'layout/news',
+        'layout/contact';
