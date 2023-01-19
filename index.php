@@ -213,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-news col-lg-4 col-sm-6 news3">
+                    <div class="card-news col-lg-4 col-sm-6 card3">
                         <a class="news-link <?= $result[2]['newsColour'] ?>-card" href="#"><strong><?= $result[2]['newsLink'] ?></strong></a>
                         <img class="card-img" src="<?= $result[2]['newsImage'] ?>" alt="">
                         <a class="card-link" href="#"></a>

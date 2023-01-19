@@ -8,6 +8,57 @@
     <div id="main">
         <?php include("inc/header.php") ?>
 
+        <div id="offices">
+            <div class="offices-header">
+                <h2>Our Offices</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="office-card col-lg-4 col-sm-6">
+                        <img class="card-img" src="img/offices/cambridge.jpg" alt="Cambridge Office">
+                        <a class="card-link" href="#"></a>
+                        <div class="card-body">
+                            <h3>Cambridge Office</h3>
+                            <p>Unit 1.31,<br>
+                               St John's Innovation Centre,<br>
+                               Cowley Road, Milton,<br>
+                               Cambridge,<br>
+                               CB4 0WS</p>
+                            <a class="office-number" href="#">01223 37 57 72</a>
+                            <a class="btn purple-card" href="#">View More</a>
+                        </div>
+                    </div>
+                    <div class="office-card col-lg-4 col-sm-6">
+                        <img class="card-img" src="img/offices/wymondham.jpg" alt="Wymondham Office">
+                        <a class="card-link" href="#"></a>
+                        <div class="card-body">
+                            <h3>Wymondham Office</h3>
+                            <p>Unit 15,<br>
+                               Penfold Drive,<br>
+                               Gateway 11 Business Park,<br>
+                               Wymondham, Norfolk,<br>
+                               NR18 0WZ</p>
+                            <a class="office-number" href="#">01603 70 40 20</a>
+                            <a class="btn purple-card" href="#">View More</a>
+                        </div>
+                    </div>
+                    <div class="office-card col-lg-4 col-sm-6 card3">
+                        <img class="card-img" src="img/offices/yarmouth-2.jpg" alt="Great Yarmouth Office">
+                        <a class="card-link" href="#"></a>
+                        <div class="card-body">
+                            <h3>Great Yarmouth Office</h3>
+                            <p>Suite F23,<br>
+                               Beacon Innovation Centre,<br>
+                               Beacon Park, Gorleston,<br>
+                               Great Yarmouth, Norfolk,<br>
+                               NR31 7RA</p>
+                            <a class="office-number" href="#">01493 60 32 04</a>
+                            <a class="btn purple-card" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Form Section -->
         <div class="form-container">

@@ -1,9 +1,7 @@
 <?php
-
-//session_start();
-
 $inputs = [];
 $errors = [];
+$error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -11,8 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate name
     $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
     $inputs['name'] = $name;
+    $error = "";
     if (!$name || trim($name) === '') {
-        $errors['name'] = 'Please enter your name';
+        $error = 'Your name';
+        array_push($errors, $error);
+        //echo "<script>alert('Please enter your name');</script>";
     }
 
     // Validate company name
@@ -22,38 +23,65 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate email
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $inputs['email'] = $email;
+    $error = "";
     if ($email) {
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
         if (!$email) {
-            $errors['email'] = 'Please enter a valid email';
-            echo "<script>alert('Please enter a valid email');</script>";
+            $error = 'A valid email';
+            array_push($errors, $error);
+            //echo "<script>alert('Please enter a valid email');</script>";
         }
     } else {
-        $errors['email'] = 'Please enter an email';
-        echo "<script>alert('Please enter an email');</script>";
+        $error = 'Your email';
+        array_push($errors, $error);
+        //echo "<script>alert('Please enter an email');</script>";
     }
 
     $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_NUMBER_INT);
     $inputs['telephone'] = $telephone;
+    $error = "";
     if (!$telephone || trim($telephone) === '') {
-        $errors['telephone'] = 'Please enter your telephone number';
-        echo "<script>alert('Please enter your telephone number');</script>";
+        $error = 'Your telephone number';
+        array_push($errors, $error);
+        //echo "<script>alert('Please enter your telephone number');</script>";
     } 
 
     // Validate subject
     $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
     $inputs['subject'] = $subject;
+    $error = "";
     if (!$subject || trim($subject) === '') {
-        $errors['subject'] = 'Please enter the subject';
+        $error = 'Subject';
+        array_push($errors, $error);
+        //echo "<script>alert('Please enter a subject');</script>";
     }
 
     // Validate message
     $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
     $inputs['message'] = $message;
+    $error = "";
     if (!$message || trim($message) === '') {
-        $errors['message'] = 'Please enter the message';
+        $error = 'Message';
+        array_push($errors, $error);
+        //echo "<script>alert('Please enter a message');</script>";
     }
 
-    var_dump($inputs);
+    //var_dump($errors);
+    if($errors) {
+        formatErrors($errors);
+    }
+}
 
+function formatErrors($errs) {
+    $allErrors = "";
+    foreach($errs as $item) {
+        $allErrors .= $item . "\\n";
+    }
+    echo "<script>alert('Please correct the following field(s):\\n{$allErrors}');</script>";
+}
+
+
+if (isset($_POST["name"], $_POST["email"], $_POST["telephone"], $_POST["subject"], $_POST["message"]) 
+        && empty($error)) {
+    require "insert.php";
 }

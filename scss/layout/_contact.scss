@@ -1,6 +1,103 @@
+#offices {
+    padding: 30px 32px;
+    @include centre;
+    .offices-header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        h2 {
+            font-size: 2.25rem;
+        }
+        h3 {
+            a {
+                text-decoration: none;
+                font-size: 2rem;
+            }
+        }
+    }
+    .container {
+        .row {
+            .office-card {
+                position: relative;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 30px;
+                transition: .5s ease;
+
+                .card-img {
+                    width: 100%;
+                    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                    border-radius: 0px;
+                }
+                .card-body {
+                    display: block;
+                    border: 1px solid #ccc;
+                    border-top: 0;
+                    border-radius: 3px;
+                    padding: 30px;
+                    text-decoration: none;
+                    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                    h3 {
+                        color: $purple;
+                        padding-top: -20px;
+                        font-size: 1.4rem;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: .85rem;
+                    }
+                    .btn {
+                        padding: 7px 15px;
+                        margin-top: 20px;
+                    }
+                    .office-number {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        color: $purple;
+                    }
+                }
+                .card-link {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                @media (max-width: $sm) {
+                    max-width: 100%;
+                    
+                }
+            }
+
+            .office-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .card3 {
+                @media (max-width: $md) {
+                    display: none;
+                }
+            }
+
+            @media (max-width: $md) {
+                justify-content: space-around;
+            }
+
+            @media (max-width: $sm) {
+                display: block;
+            }
+        }
+    }
+}
+
 .form-container {
     @include centre;
     max-width: 770px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 
     #contact-form {
         display: flex;
