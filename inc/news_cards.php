@@ -1,6 +1,4 @@
 <?php
-
-
 $randomNums = [];
 
 while(count($randomNums) < 3) {

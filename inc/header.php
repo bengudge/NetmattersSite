@@ -1,3 +1,4 @@
+<!-- Sidebar is a work in progress   -->
 <!-- <nav id="sidebar" class="active">
     <div class="sidebar-header">
         <h3>jQueryScript</h3>

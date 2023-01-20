@@ -13,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$name || trim($name) === '') {
         $error = 'Your name';
         array_push($errors, $error);
-        //echo "<script>alert('Please enter your name');</script>";
     }
 
     // Validate company name
@@ -29,12 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!$email) {
             $error = 'A valid email';
             array_push($errors, $error);
-            //echo "<script>alert('Please enter a valid email');</script>";
         }
     } else {
         $error = 'Your email';
         array_push($errors, $error);
-        //echo "<script>alert('Please enter an email');</script>";
     }
 
     $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_NUMBER_INT);
@@ -43,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$telephone || trim($telephone) === '') {
         $error = 'Your telephone number';
         array_push($errors, $error);
-        //echo "<script>alert('Please enter your telephone number');</script>";
     } 
 
     // Validate subject
@@ -53,7 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$subject || trim($subject) === '') {
         $error = 'Subject';
         array_push($errors, $error);
-        //echo "<script>alert('Please enter a subject');</script>";
     }
 
     // Validate message
@@ -63,7 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$message || trim($message) === '') {
         $error = 'Message';
         array_push($errors, $error);
-        //echo "<script>alert('Please enter a message');</script>";
     }
 
     //var_dump($errors);

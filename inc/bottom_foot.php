@@ -1,4 +1,5 @@
         <script> 
+            // Sidebar is a work in progress    
             // const pushbar = new Pushbar({
             //     blur:true,
             //     overlay:true,
@@ -50,7 +51,9 @@
                 document.getElementById("mySidebar").style.width = "0";
                 document.getElementById("main").style.marginRight = "0";
             }
-                        
+
+
+            // Sidebar is a work in progress            
             // $(document).ready(function() {
             //     $("#sidebarCollapse").on('click',function() {
             //     $("#sidebar").toggleClass('active');

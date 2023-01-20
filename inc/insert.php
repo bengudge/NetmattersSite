@@ -11,6 +11,7 @@ try {
     $sth->bindValue(6, $_POST["message"], PDO::PARAM_STR);
     $sth->execute();
 
+    echo "<script>alert('Contact message sent!');</script>";
 }
 catch(PDOException $e) {
     print ("Exception: " . $e->getMessage());
