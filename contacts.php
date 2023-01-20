@@ -111,7 +111,6 @@
                 <button class="btn contact-submit" type="submit" name="submit" value="submit">SEND ENQUIRY</button>
             </form>
         </div>
-
     </div>
 
 <?php include("inc/footer.php") ?>

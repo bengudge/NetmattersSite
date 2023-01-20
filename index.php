@@ -268,4 +268,3 @@
 <?php include("inc/scripts.php") ?>
 
 <?php include("inc/bottom_foot.php") ?>
-            
