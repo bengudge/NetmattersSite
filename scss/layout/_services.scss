@@ -16,121 +16,191 @@
         }
     }
     .container {
-        
         .row {
-            .col-md-4, .col-lg-3, .col-md-6, .col-sm-6 {
-                .card-link {
-                    display: block;
-                    padding: 30px;
-                    margin-bottom: 25px;
-                    //margin-left: 10px;
-                    //margin-right: 10px;
-                    text-align: center;
-                    border-radius: 15px;
-                    border: 1px solid #ccc;
-                    box-shadow: 0 3px 35px rgba(0,0,0,.1);
-                    font-weight: 400;
-                    .icon-circle {
-                        border-radius: 50%;
-                        height: 65px;
-                        width: 65px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-bottom: 10px;
-                        i {
-                            color: white;
-                            padding-left: 1px;
-                            //padding-right: auto;
-                            padding-top: 19px;
-                            font-size: 1.7rem;
-                        }
-                    }
-                    h2 {
-                        font-size: 1.4rem;
-                    }
-                    p {
-                        font-size: .85rem;
-                    }
-                    .btn {
-                        margin-top: auto;
-                        margin-bottom: 5px;
+            // .card {
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: space-between;
+            // }
+            .card-link {
+                display: block;
+                padding: 30px;
+                margin-bottom: 25px;
+                //margin-left: 10px;
+                //margin-right: 10px;
+                text-align: center;
+                border-radius: 15px;
+                border: 1px solid #ccc;
+                box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                font-weight: 400;
+                .icon-circle {
+                    border-radius: 50%;
+                    height: 65px;
+                    width: 65px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 10px;
+                    i {
+                        color: white;
+                        padding-left: 1px;
+                        //padding-right: auto;
+                        padding-top: 19px;
+                        font-size: 1.7rem;
                     }
                 }
-                .card-link:hover {
-                    color: white;
+                h2 {
+                    font-size: 1.4rem;
                 }
-                .bs-hover:hover {
-                    background-color: $grey;
-                    .bs {
-                        background-color: white;
-                        color: $grey;
-                        .bs-icon {
-                            @include greyImg;
-                        }
+                p {
+                    font-size: .85rem;
+                }
+                .btn {
+                    margin-top: auto;
+                    margin-bottom: 5px;
+                }
+
+                .br-row1 {
+                    height: 20.41px;
+                }
+                .br-row2 {
+                    height: 20px;
+                }
+
+                #m-wd, #m-cs {
+                    margin-bottom: 57.28px;
+                }
+
+
+                @media (max-width: 1200px) {
+                    .br-row2 {
+                        height: 0px;
+                    }
+                    #br-ts, #br-cs {
+                        height: 20.40px;
+                    }
+                    #br-wd {
+                        height: 20px;
+                    }
+                    #m-cs {
+                        margin-bottom: 30px;
                     }
                 }
-                .is-hover:hover {
-                    background-color: $blue;
-                    .is {
-                        background-color: white;
-                        color: $blue;
-                        i {
-                            color: $blue;
-                        }
+                @media (max-width: $md) {
+                    .br-row1 {
+                        height: 20.79px;
+                    }
+                    #m-is {
+                        margin-bottom: 57.28px;
+                    }
+                    #br-ts {
+                        height: 0px;
+                    }
+                    #m-wd {
+                        margin-bottom: 30px;
+                    }
+                    #br-wd {
+                        height: 20.40px;
                     }
                 }
-                .dm-hover:hover {
-                    background-color: $green;
-                    .dm {
-                        background-color: white;
-                        color: $green;
-                        i {
-                            color: $green;
-                        }
+                @media (max-width: $sm) {
+                    .br-row1 {
+                        height: 0px;
+                    }
+                    #m-is {
+                        margin-bottom: 30px;
+                    }
+                    #br-ts {
+                        height: 20.40px;
+                    }
+                    #m-wd, #m-cs {
+                        margin-bottom: 56.89px
                     }
                 }
-                .ts-hover:hover {
-                    background-color: $red;
-                    .ts {
-                        background-color: white;
-                        color: $red;
-                        i {
-                            color: $red;
-                        }
+                @media (max-width: $xs) {
+                    #m-wd, #m-cs {
+                        margin-bottom: 30px
                     }
-                }
-                .wd-hover:hover {
-                    background-color: $purple;
-                    .wd {
-                        background-color: white;
-                        color: $purple;
-                        i {
-                            color: $purple;
-                        }
-                    }
-                }
-                .cs-hover:hover {
-                    background-color: $bubblegum;
-                    .cs {
-                        background-color: white;
-                        color: $bubblegum;
-                        i {
-                            color: $bubblegum;
-                        }
-                    }
-                }
-                .dt-hover:hover {
-                    background-color: $tomato;
-                    .dt {
-                        background-color: white;
-                        color: $tomato;
-                        i {
-                            color: $tomato;
-                        }
+                    #br-wd, #br-cs {
+                        height: 0px;
                     }
                 }
                 
             }
+            .card-link:hover {
+                color: white;
+            }
+            .bs-hover:hover {
+                background-color: $grey;
+                .bs {
+                    background-color: white;
+                    color: $grey;
+                    .bs-icon {
+                        @include greyImg;
+                    }
+                }
+            }
+            .is-hover:hover {
+                background-color: $blue;
+                .is {
+                    background-color: white;
+                    color: $blue;
+                    i {
+                        color: $blue;
+                    }
+                }
+            }
+            .dm-hover:hover {
+                background-color: $green;
+                .dm {
+                    background-color: white;
+                    color: $green;
+                    i {
+                        color: $green;
+                    }
+                }
+            }
+            .ts-hover:hover {
+                background-color: $red;
+                .ts {
+                    background-color: white;
+                    color: $red;
+                    i {
+                        color: $red;
+                    }
+                }
+            }
+            .wd-hover:hover {
+                background-color: $purple;
+                .wd {
+                    background-color: white;
+                    color: $purple;
+                    i {
+                        color: $purple;
+                    }
+                }
+            }
+            .cs-hover:hover {
+                background-color: $bubblegum;
+                .cs {
+                    background-color: white;
+                    color: $bubblegum;
+                    i {
+                        color: $bubblegum;
+                    }
+                }
+            }
+            .dt-hover:hover {
+                background-color: $tomato;
+                .dt {
+                    background-color: white;
+                    color: $tomato;
+                    i {
+                        color: $tomato;
+                    }
+                }
+            }
+                
+            
             @media (min-width: $md) {
                 .col-md-4 {
                     width: 33.3%;

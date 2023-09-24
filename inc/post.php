@@ -1,5 +1,4 @@
 <?php
-$inputs = [];
 $errors = [];
 $error = "";
 
@@ -8,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate name
     $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $inputs['name'] = $name;
     $error = "";
     if (!$name || trim($name) === '') {
         $error = 'Your name';
@@ -21,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Validate email
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $inputs['email'] = $email;
     $error = "";
     if ($email) {
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
@@ -35,7 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_NUMBER_INT);
-    $inputs['telephone'] = $telephone;
     $error = "";
     if (!$telephone || trim($telephone) === '') {
         $error = 'Your telephone number';
@@ -44,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate subject
     $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
-    $inputs['subject'] = $subject;
     $error = "";
     if (!$subject || trim($subject) === '') {
         $error = 'Subject';
@@ -53,7 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate message
     $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
-    $inputs['message'] = $message;
     $error = "";
     if (!$message || trim($message) === '') {
         $error = 'Message';

@@ -12,6 +12,23 @@ body {
     color: $dark;
     font-size: 1rem;
     letter-spacing: .4px;
+
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: gray lightgray; /* For Firefox */
+
+    margin-top: 230.56px;
+    @media (max-width: $md) {
+        margin-top: 128px;
+    }
+}
+
+html, body {
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    //margin-top: -20px;
 }
 
 img {

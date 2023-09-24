@@ -1,141 +1,243 @@
 
 #nav-wrapper {
-    width: 100%;
-    min-height: 100px;
+    //width: 100%;
     background-color: $dark;
-    nav {
-        @include centre;
-        height: 100%;
-        display: block;
-        margin: 0 auto;
-
-        ul {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            li {
-                justify-content: center;
-                position: relative;
-                text-align: center;
-                text-transform: uppercase;
-                display: block;
-                margin-top: auto;
-                margin-bottom: auto;
-                a {
-                    //padding: 1rem 0;
-                    
-                    color: white;
-                    text-decoration: none;
-                    .bs-icon {
-                        @include greyImg;
-                        height: 23.5px;
-                        width: 23.5px;
-                        margin-top: 17px;
-                        margin-bottom: 5px;
-                    }
-                    i {
-                        margin-top: 21px;
-                        margin-bottom: 8px;
-                    }
-                    small {
-                        display: block;
-                        color: white;
-                        font-size: xx-small;
-                        
-                    }
-                }
-            }
-        }
-    }
     @media (max-width: $md) { 
         display: none;
     }
 }
 
-// .wrapper {
-//     display: flex;
-//     // may need to change this 
-//     //flex-direction: column-reverse;
-//     text-decoration: none;
-//     transition: all 0.4s;
-//   }
-  
-//   #sidebar {
-//     min-width: 250px;
-//     max-width: 250px;
-//     background: #262933;
-//     color: #fff;
-//     transition: all 0.4s;
-//     height: 100vh;
-//   }
-   
-//   #sidebar.active {
-//     margin-left: -250px;
-//   }
-  
-//   #sidebar .sidebar-header {
-//     padding: 20px;
-//     background: #1b1d24;
-//   }
+nav {
+    @include centre;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    @media (max-width: $lg) {
+        max-width: 940px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
 
-//   #sidebar ul.components {
-//     padding: 20px 0;
-//     /* border-bottom: 1px solid #47748b; */
-//   }
-  
-//   #sidebar ul p {
-//     color: #fff;
-//     padding: 10px;
-//   }
-  
-//   #sidebar ul li a {
-//     padding: 10px;
-//     font-size: 1.1em;
-//     display: block;
-//   }
-  
-//   #sidebar ul li a:hover {
-//     color: #262933;
-//     background: #fff;
-//   }
-  
-//   #sidebar ul li.active>a,
-//   a[aria-expanded="true"] {
-//     color: #fff;
-//     background: #1b1d24;
-//   }
-  
-//   a[data-toggle="collapse"] {
-//     position: relative;
-//   }
-  
-//   .dropdown-toggle::after {
-//     display: block;
-//     position: absolute;
-//     top: 50%;
-//     right: 20%;
-//     transform: translateY(-50%);
-//   }
-  
-//   ul ul a {
-//     font-size: 0.9em !important;
-//     padding-left: 30px !important;
-//     background: #1b1d24;
-//   }
+        li {
+            justify-content: center;
+            text-align: center;
+            
+            margin-top: auto;
+            margin-bottom: auto;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                color: white;
+            }
+        }
+    }
+}
 
-  @media (max-width: 768px) {
-    // #sidebar {
-    //   margin-left: -250px;
-    // }
-  
-    // #sidebar.active {
-    //   margin-left: 0;
-    // }
-  
-    // #sidebarCollapse span {
-    //   display: none;
-    // }
-  }
+.nav-item {
+    flex: 1;
+}
+
+.nav-button:hover {
+    text-decoration: none;
+}
+
+.nav-button {
+    display: block;
+    padding: 19px 0 14px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    .bs-icon {
+        @include greyImg;
+        height: 25px;
+        width: 25px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    i {
+        //margin-top: 21px;
+        margin-bottom: 8px;
+        font-size: 1.2em;
+    }
+    small {
+        display: block;
+        color: white;
+        font-size: .65em;
+        
+    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 45px;
+
+    li {
+        width: 33%;
+        margin-top: 15px;
+    }
+
+    .submenu-list {
+        @include centre;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        @media (max-width: $lg) {
+            max-width: 970px;
+        }
+
+        .submenu-title {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .submenu-item {
+            text-align: left;
+            font-size: 1.2rem;
+            
+            padding-bottom: 0.900rem;
+            
+            .submenu-text {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/* Hover styling for drop down menus */
+
+.nav-item:hover .submenu {
+    display: inline-block;
+}
+
+
+#nav-software:hover > .nav-button {
+    .bs-icon {
+        filter: brightness(0) invert(1);
+    }
+    background-color: $grey;
+
+}
+#nav-software:hover > .submenu {
+    background-color: #526781;
+}
+
+#nav-support:hover > .nav-button {
+    background-color: $blue;
+    i {
+        color: #fff;
+    }
+}
+#nav-support:hover > .submenu {
+    background-color: #286abd;
+}
+
+#nav-marketing:hover > .nav-button {
+    background-color: $green;
+    i {
+        color: #fff;
+    }
+}
+#nav-marketing:hover > .submenu {
+    background-color: #25a25a;
+}
+
+#nav-telecoms:hover > .nav-button {
+    background-color: $red;
+    i {
+        color: #fff;
+    }
+}
+#nav-telecoms:hover > .submenu {
+    background-color: #bc2c28;
+}
+
+#nav-web-design:hover > .nav-button {
+    background-color: $purple;
+    i {
+        color: #fff;
+    }
+}
+#nav-web-design:hover > .submenu {
+    background-color: #79539a;
+}
+
+#nav-security:hover > .nav-button {
+    background-color: $bubblegum;
+    i {
+        color: #fff;
+    }
+}
+#nav-security:hover > .submenu {
+    background-color: #de093f;
+}
+
+#nav-developer:hover > .nav-button {
+    background-color: $tomato;
+    i {
+        color: #fff;
+    }
+}
+#nav-developer:hover > .submenu {
+    background-color: #a3331d;
+}
+
+/* For the triangle on navbar hover */
+
+.nav-item:hover > .nav-button::before {
+    content: "";
+    position: absolute;
+    //left: 50%;
+    bottom: -34px;
+    transform: translateX(-43%);
+    z-index: 90;
+    width: 0;
+    height: 0;
+    border-color: $grey transparent transparent;
+    border-style: solid;
+    border-width: 35px 85px 0;
+
+    @media (max-width: $lg) {
+        transform: translateX(-41.5%);
+        border-width: 35px 67px 0;
+    }
+}
+
+#nav-support:hover  .nav-button::before {
+    border-color: $blue transparent transparent;
+}
+#nav-marketing:hover  .nav-button::before {
+    border-color: $green transparent transparent;
+}
+#nav-telecoms:hover  .nav-button::before {
+    border-color: $red transparent transparent;
+}
+#nav-web-design:hover  .nav-button::before {
+    border-color: $purple transparent transparent;
+}
+#nav-security:hover  .nav-button::before {
+    border-color: $bubblegum transparent transparent;
+}
+#nav-developer:hover  .nav-button::before {
+    border-color: $tomato transparent transparent;
+}

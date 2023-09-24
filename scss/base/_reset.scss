@@ -20,8 +20,10 @@
    * Remove the margin in all browsers.
    */
   
-  body {
+  html, body {
+    padding: 0;
     margin: 0;
+    margin-top: -20px;
   }
   
   /**

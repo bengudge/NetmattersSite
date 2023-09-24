@@ -16,12 +16,22 @@ a {
     
 }
 
+.btn:hover {
+    color: white;
+}
+
 .support {
     background-color: $blue;
+}
+.support:hover {
+    background-color: #286abd;
 }
 
 .contact {
     background-color: #999aa2;
+}
+.contact:hover {
+    background-color: #77777c;
 }
 
 .bs {
@@ -55,15 +65,27 @@ a {
 .welcome-read {
     background-color: #272936;
 }
+.welcome-read:hover {
+    background-color: #111;
+}
 
 .google-btn {
     background-color: #4387f6;
+}
+.google-btn:hover {
+    background-color: #286abd;
 }
 
 .trustpilot-btn {
     background-color: #00b67b;
 }
+.trustpilot-btn:hover {
+    background-color: #25a25a;
+}
 
 .newsletter {
     background-color: $dark;
+}
+.newsletter:hover {
+    background-color: #111;
 }
